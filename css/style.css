@@ -1,6 +1,7 @@
 body {
   background: #8D6E63 url("../img/tg_image_289862459.jpeg");
   background-size: 150px;
+  overflow: hidden;
 }
 
 .clicker-outer {
