@@ -1,0 +1,80 @@
+body {
+  background-color: #8D6E63;
+}
+
+#clicker {
+  background-color: #ffffff;
+  border: none;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 75px;
+  
+  transition: width 0.5s, height 0.5s, margin-top 0.5s, box-shadow 0.5s, background-color 0.5s;
+}
+
+#clicker:hover {
+  width: 220px;
+  height: 220px;
+  margin-top: 70px;
+}
+
+.button {
+  outline: none;
+  transition: box-shadow 0.5s, background-color 0.5s;
+}
+
+.button:hover {
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+
+#clicker:active {
+  background-color: #D7CCC8;
+}
+
+.yellow-text {
+  font-family: Avenir;
+  margin-left: 20px;
+  color: #FFE082;
+}
+
+.light-brown-text {
+  font-family: Avenir;
+  color: #A1887F;
+}
+
+#clicks {
+  margin-left: 20px;
+  position: absolute;
+  bottom 0;
+}
+
+#purchase, #purchase-two, #purchase-three {
+  position: absolute;
+  background-color: #ffffff;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 2px;
+  margin-right: 20px;
+  right: 0;
+  font-size: 14px;
+}
+
+#purchase {
+  margin-top: -40px;
+}
+
+#purchase-two {
+  margin-top: 20px;
+}
+
+#purchase-three {
+  margin-top: 80px;
+}
+
+#purchase:disabled, #purchase-two:disabled, #purchase-three:disabled {
+  background-color: #9E9E9E;
+}
