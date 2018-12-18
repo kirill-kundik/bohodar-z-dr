@@ -1,18 +1,34 @@
 body {
-  background-color: #8D6E63;
+  background: #8D6E63 url("../img/tg_image_289862459.jpeg");
+  background-size: 150px;
+}
+
+.clicker-outer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #clicker {
-  background-color: #ffffff;
+  overflow: hidden;
+  background: none;
   border: none;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
   display: block;
   margin: auto;
-  margin-top: 75px;
-  
-  transition: width 0.5s, height 0.5s, margin-top 0.5s, box-shadow 0.5s, background-color 0.5s;
+  position: relative;
+  outline: none;
+  transition: transform 1.3s, background-color 1s, width 2s, height 2s;
+}
+
+.bgdr-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #clicker:hover {
@@ -23,21 +39,25 @@ body {
 
 .button {
   outline: none;
-  transition: box-shadow 0.5s, background-color 0.5s;
-}
-
-.button:hover {
-  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.5s, background 0.5s;
 }
 
 #clicker:active {
-  background-color: #D7CCC8;
+  background-color: rgba(194, 151, 136, 0.62);
+  transform: rotate(180deg);
+}
+
+#clicker:hover {
+  width: 1300px;
+  height: 1300px;
 }
 
 .yellow-text {
   font-family: Avenir;
   margin-left: 20px;
-  color: #FFE082;
+  color: black;
+  font-size: 45px;
+  font-weight: 700;
 }
 
 .light-brown-text {
@@ -48,14 +68,14 @@ body {
 #clicks {
   margin-left: 20px;
   position: absolute;
-  bottom 0;
+  bottom: 0;
 }
 
 #purchase, #purchase-two, #purchase-three {
   position: absolute;
   background-color: #ffffff;
-  width: 200px;
-  height: 50px;
+  width: 300px;
+  height: 70px;
   border: none;
   border-radius: 2px;
   margin-right: 20px;
@@ -68,11 +88,7 @@ body {
 }
 
 #purchase-two {
-  margin-top: 20px;
-}
-
-#purchase-three {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 #purchase:disabled, #purchase-two:disabled, #purchase-three:disabled {
